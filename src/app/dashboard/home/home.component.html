@@ -1,0 +1,106 @@
+<div class="body">
+
+  <!-- Home -->
+  <div class="home padding-xl pink-3">
+    <div class="presentation animate__animated animate__fadeInLeft black-txt-1">
+      <h1>Maria Joaquina</h1>
+      <h2>Moreno Aulacio</h2>
+      <h6 class="gray-txt-2">Ingeniera en Informática</h6>
+      <button mat-raised-button>
+        Sobre mí
+      </button>
+    </div>
+  </div>
+
+  <!-- About me -->
+  <div class="about-me white-txt-1">
+    <div class="display-flex">
+      <div class="description">
+        <h3>Sobre mí</h3>
+        <div class="divider-md white-1"></div>
+        <p class="text-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Si senor, asi mismo es lorem ipsum officiis quis
+          repudiandae alias vitae illo dolor sit amet consectetur adipisicing elit. Facere voluptates officia accusamus
+          quis culpa nam perspiciatis minima itaque magnam neque, esse, error beatae adipisci expedita a placeat quaerat
+          velit praesentium. nemo non vitae architecto. Voluptate, dolorum sequi! nemo non vitae architecto. Voluptate, 
+          dolorum sequi! nemo non vitae architecto. Voluptate, dolorum sequi!
+        </p>
+        <p class="text-2 gray-txt-1">
+          Dolores accusamus natus eum similique delectus, suscipit laborum atque ipsa est minima provident neque!
+        </p>
+      </div>
+      <div class="left-auto">
+        <div class="card-1 pink-3">
+          <img src="../../../assets/img/img-1.png" class="w-18" />
+        </div>
+        <div class="card-2">
+          <img src="../../../assets/img/img-3.jpg" class="w-18" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills and interests -->
+  <div class="skills-and-interests">
+    <div class="display-flex">
+      <button mat-raised-button 
+              class="skills-buttons" 
+              *ngFor="let item of buttons" 
+              (click)="showInfo( item.link )">
+        {{ item.name }}
+      </button>
+      <div class="divider-xl white-1 left-auto"></div>
+    </div>
+    <div class="display-flex description">
+      <div class="image">
+        <img [src]="image" />
+      </div>
+      <div class="left-auto">
+        <h2 class="white-txt-1">{{ information }}</h2>
+        <p class="text-1 white-txt-1" *ngIf="description === 1">
+          1 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
+          perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
+          consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
+          nemo non vitae architecto. Voluptate, dolorum sequi!
+        </p>
+        <p class="text-1 white-txt-1" *ngIf="description === 2">
+          2 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
+          perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
+          consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
+          nemo non vitae architecto. Voluptate, dolorum sequi!
+        </p>
+        <p class="text-1 white-txt-1" *ngIf="description === 3">
+          3 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
+          perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
+          consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
+          nemo non vitae architecto. Voluptate, dolorum sequi!
+        </p>
+        <p class="text-2 white-txt-1">{{ shortDescription }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Experience -->
+  <div class="experience pink-4 display-flex">
+    <div class="information">
+      <h3>Experiencia</h3>
+      texto aqui ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssh
+      uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+      ggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
+      gggggggggggggggggg hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhfdddddddddddddd
+      dddddddddddddddddddddddddddddddddddddddddddddddd
+    </div>
+    <div class="left-auto">
+      <div style="height: 150px;" class="left-wave" bis_skin_checked="1">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+          <path d="M130.02,-2.46 C-53.95,46.75 180.24,87.09 36.90,156.98 L-0.00,149.60 L-0.00,0.00 Z" style="stroke: none; fill: #08f;"></path>
+        </svg>
+      </div>
+      
+      <img src="../../../assets/img/andras-vas-Bd7gNnWJBkU-unsplash.jpg" class="experience-image">
+    </div>
+  </div>
+</div>

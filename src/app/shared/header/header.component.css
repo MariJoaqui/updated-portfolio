@@ -1,0 +1,31 @@
+mat-toolbar {
+  padding: 0 3rem 0 3.5rem;
+}
+.image {
+  border: 2px solid #F9E4EF;
+  border-radius: 50%;
+  height: 3rem;
+  margin: 0.8rem 1rem 0 0;
+  width: 3rem;
+}
+.title {
+  margin-top: 0.8rem;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.wave-style {
+  height: 150px; 
+  overflow: hidden; 
+  position: absolute; 
+  width: 100%;
+  z-index: 10000; 
+}
+.wave-style svg {
+  height: 100%; 
+  width: 100%;
+}
+.wave-style path {
+  fill: #FFFFFF;
+  stroke: none;
+}

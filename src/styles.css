@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global */
+* { box-sizing: border-box; font-family: 'Bricolage Grotesque', sans-serif; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+body::-webkit-scrollbar { width: 0.5rem; }
+body::-webkit-scrollbar-track { background: #000000; }
+body::-webkit-scrollbar-thumb { background: #B07184; }
+
+/* Fonts */
+h1 { font-size: 5rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3.5rem; }
+h4 { font-size: 2.8rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1.6rem; }
+p { font-size: 1.3rem; }
+
+.text-1 { line-height: 2rem; }
+.text-2 { font-size: 1rem; }
+
+/* Divider */
+.divider-sm { height: 0.1rem; width: 5rem; }
+.divider-md { height: 0.1rem; width: 8rem; }
+.divider-lg { height: 0.1rem; width: 12rem; }
+.divider-xl { height: 0.13rem; width: 48rem; }
+
+/* Display */
+.display-block { display: block; }
+.display-flex { display: flex; }
+
+/* Margin - Padding */
+.left-auto { margin-left: auto; }
+
+.margin-sm { margin: 0.5rem 1rem; }
+.margin-md { margin: 1.5rem 2rem; }
+.margin-lg { margin: 2.5rem 3rem; }
+.margin-xl { margin: 3rem 5rem; }
+
+.padding-sm { padding: 0.5rem 1rem; }
+.padding-md { padding: 1.5rem 2rem; }
+.padding-lg { padding: 2.5rem 3rem; }
+.padding-xl { padding: 3rem 5rem; }
+
+/* Colors (Background) */
+.black-1 { background: #000000; }
+
+.gray-2 { background: #525252; }
+.gray-1 { background: #939393; }
+
+.white-1 { background: #FFFFFF; }
+
+.pink-1 { background: #F9E4EF; }
+.pink-2 { background: #FBD6E6; }
+.pink-3 { background: #E6CCD4; }
+.pink-4 { background: #B07184; }
+.pink-5 { background: #DD6783; }
+
+/* Colors (Text) */
+.black-txt-1 { color: #000000; }
+
+.gray-txt-2 { color: #525252; }
+.gray-txt-1 { color: #939393; }
+
+.white-txt-1 { color: #FFFFFF; }
+
+.pink-txt-1 { color: #F9E4EF; }
+.pink-txt-2 { color: #FBD6E6; }
+.pink-txt-3 { color: #E6CCD4; }
+.pink-txt-4 { color: #B07184; }
+.pink-txt-5 { color: #DD6783; }
