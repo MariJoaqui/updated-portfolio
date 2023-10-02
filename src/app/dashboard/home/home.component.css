@@ -85,8 +85,6 @@
 /* Experience */
 .experience .information { padding: 3rem 5rem; }
 
-/* .experience .left-auto {  } */
-
 .left-wave, .experience-image { position: relative; }
 .left-wave { z-index: 2; }
 .left-wave svg {
