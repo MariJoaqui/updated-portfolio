@@ -83,18 +83,3 @@
 .skills-and-interests .text-1 { margin-bottom: 1rem; }
 
 /* Experience */
-.experience .information { padding: 3rem 5rem; }
-
-.left-wave, .experience-image { position: relative; }
-.left-wave { z-index: 2; }
-.left-wave svg {
-  height: 29.6rem; 
-  width: 100%;
-}
-
-.experience-image {
-  height: 29.6rem;
-  bottom: 9.4rem;
-  width: 30rem;
-  z-index: 1;
-}

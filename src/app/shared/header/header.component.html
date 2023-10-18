@@ -1,19 +1,32 @@
-<!-- Navbar -->
-<mat-toolbar>
-  <img src="../../../assets/img/profile.jpeg" class="image">
-  <span class="title">Maria Moreno</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-    <mat-icon>share</mat-icon>
-  </button>
-</mat-toolbar>
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer>
+    <a class="gray-txt-1 text-2 cursor-pointer" 
+       *ngFor="let item of links">
+      {{ item.name }}
+    </a>
+  </mat-drawer>
+  <mat-drawer-content>
+    <!-- Navbar -->
+    <mat-toolbar class="mat-toolbar white-1">
+      <img src="../../../assets/img/profile.jpeg" class="image">
+      <span class="title black-txt-1">Maria Moreno</span>
+      <span class="example-spacer"></span>
+      <a class="gray-txt-1 text-2 cursor-pointer" 
+        *ngFor="let item of links">
+        {{ item.name }}
+      </a>
+      <button mat-icon-button class="display-none" (click)="drawer.toggle()">
+        <mat-icon>more_vert</mat-icon>
+      </button>
+    </mat-toolbar>
+    <!-- /Navbar -->
 
-<!-- Wave -->
-<div class="wave-style" bis_skin_checked="1">
-  <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-    <path d="M-2.03,7.39 C200.56,60.53 326.41,-25.10 500.22,13.28 L500.00,0.00 L-0.90,-8.37 Z"></path>
-  </svg>
-</div>
+    <!-- Wave -->
+    <div class="wave-style" bis_skin_checked="1">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M-2.03,7.39 C200.56,60.53 326.41,-25.10 500.22,13.28 L500.00,0.00 L-0.90,-8.37 Z"></path>
+      </svg>
+    </div>
+    <!-- /Wave -->
+  </mat-drawer-content>
+</mat-drawer-container>

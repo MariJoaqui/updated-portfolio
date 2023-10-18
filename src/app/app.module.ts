@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Modules
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material/material.module';
 import { SharedModule } from './shared/shared.module';
 
 // Components
@@ -18,6 +19,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MaterialModule,
     SharedModule
   ],
   providers: [],
