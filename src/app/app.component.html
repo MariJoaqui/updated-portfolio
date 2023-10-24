@@ -4,7 +4,9 @@
     <!-- SideNav -->
     <mat-drawer #drawer class="drawer">
       <div class="drawer-bg pink-4 display-flex">
-        <button mat-icon-button class="white-txt-1 left-auto">
+        <button mat-icon-button 
+                class="white-txt-1 left-auto"
+                (click)="close()">
           <mat-icon>close</mat-icon>
         </button>
       </div>
