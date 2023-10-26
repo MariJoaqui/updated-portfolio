@@ -52,7 +52,6 @@
   background: linear-gradient(0deg, #B07184 0%, #432F4A 49%, #000000 100%);
   padding: 8rem 5rem 6rem 5rem;
 }
-.skills-and-interests .divider-xl { margin-top: 1.1rem; }
 .skills-and-interests .skills-buttons {
   background: #B07184 !important;
   border-radius: 2rem;
@@ -67,6 +66,7 @@
   color: #B07184 !important;
   transition: 0.5s;
 }
+.skills-and-interests .divider-xl { margin-top: 1.1rem; }
 .skills-and-interests .description { padding-top: 3rem; }
 .skills-and-interests .image { margin: 2.5rem 7rem 0 0.5rem; }
 .skills-and-interests .image img {
@@ -76,7 +76,7 @@
 .skills-and-interests .description .left-auto { margin-top: 2.4rem; }
 .skills-and-interests .description h2 {
   margin-bottom: 1rem;
-  text-shadow: #DD6783 0.1em 0.1em 0.2em
+  text-shadow: #DD6783 0.1em 0.1em 0.2em;
 }
 .skills-and-interests .text-1 { margin-bottom: 1rem; }
 
@@ -89,10 +89,16 @@
   .about-me .display-flex { height: 43rem; }
   .about-me .description { padding: 5rem 0; }
 
+  /* Skills and interests */
+  .skills-and-interests .divider-xl { margin-left: 5%; }
+  .skills-and-interests .description .image { margin: 2.5rem 4rem 0 0; }
+  .skills-and-interests .description .left-auto { margin-top: 1.4rem; }
+  
 }
 @media screen and (max-width: 1200px) {
 
   /* About me */
+  .about-me { padding: 0 5rem; }
   .about-me .display-flex { 
     flex-direction: column;
     height: auto !important; 
@@ -114,6 +120,19 @@
     margin-right: 10rem;
     bottom: 13rem;
   }
+
+  /* Skills and interests */
+  .skills-and-interests { padding: 5rem; }
+  .skills-and-interests .buttons { justify-content: center; }
+  .skills-and-interests .skills-buttons { margin: 0 1rem; }
+  .skills-and-interests .divider-xl { display: none; }
+  .skills-and-interests .description { flex-direction: column; }
+  .skills-and-interests .description .image { 
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0; 
+  }
+  .skills-and-interests .description .image img { margin: 0 auto; }
 
 }
 @media screen and (max-width: 730px) {
@@ -157,5 +176,30 @@
     margin-right: 3rem; 
   }
   .about-me .w-18 { width: 11rem; }
-  
+
+  /* Skills and interests */
+  .skills-and-interests { padding: 3rem 1.5rem; }
+  .skills-and-interests .skills-buttons {
+    font-size: 0.8rem;
+    height: 2rem;
+    margin: 0 0.4rem;
+    padding: 0 1.2rem;
+  }
+  .skills-and-interests .image img {
+    height: 17rem;
+    width: 20rem;
+  }
+  .skills-and-interests .description h2 { 
+    font-size: 2.3rem; 
+    margin-top: 1rem;
+  }
+  .skills-and-interests .text-1 { 
+    font-size: 1rem; 
+    line-height: 1.5rem; 
+    text-align: justify;
+  }
+  .skills-and-interests .text-2 { 
+    font-size: 0.9rem; 
+    text-align: justify;
+  }
 }
