@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Interfaces
-import { Links } from 'src/app/shared/interfaces';
+import { Links } from 'src/app/shared/interfaces/interfaces';
 
 @Component({
   selector: 'app-home',

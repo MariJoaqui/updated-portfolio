@@ -1,55 +1,17 @@
-<div class="app-body">
-  <mat-drawer-container>
-
-    <!-- SideNav -->
-    <mat-drawer #drawer class="drawer">
-      <div class="drawer-bg pink-4 display-flex">
-        <button mat-icon-button 
-                class="white-txt-1 left-auto"
-                (click)="close()">
-          <mat-icon>close</mat-icon>
-        </button>
-      </div>
-      <div class="display-flex flex-column">
-        <a class="gray-txt-1 text-2 cursor-pointer padding-sm" *ngFor="let item of links">{{ item.name }}</a>
-      </div>
-    </mat-drawer>
-    <!-- /SideNav -->
-
-    <!-- Content -->
-    <mat-drawer-content>
-
-      <!-- Navbar -->
-      <mat-toolbar class="mat-toolbar white-1">
-        <img src="../assets/img/profile.jpeg" class="image">
-        <span class="title black-txt-1">Ing. Maria Moreno</span>
-        <span class="example-spacer"></span>
-        <a class="gray-txt-1 text-2 cursor-pointer nav-items" 
-           *ngFor="let item of links">
-          {{ item.name }}
-        </a>
-        <button mat-icon-button class="display-none" (click)="drawer.toggle()">
-          <mat-icon>more_vert</mat-icon>
-        </button>
-      </mat-toolbar>
-      <!-- /Navbar -->
-      
-      <!-- Wave -->
-      <div class="wave-style" bis_skin_checked="1">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-          <path d="M-2.03,7.39 C200.56,60.53 326.41,-25.10 500.22,13.28 L500.00,0.00 L-0.90,-8.37 Z"></path>
-        </svg>
-      </div>
-      <!-- /Wave -->
-
-      <!-- Body -->
-      <router-outlet></router-outlet>
-
-      <!-- Footer -->
-      <app-footer></app-footer>
-    
-    </mat-drawer-content>
-    <!-- /Content -->
-
-  </mat-drawer-container>
-</div>
+<mat-drawer-container>
+  <mat-drawer #drawer class="drawer">
+    <app-side-nav></app-side-nav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-toolbar class="mat-toolbar white-1">
+      <app-header></app-header>
+    </mat-toolbar>
+    <div class="wave-style" bis_skin_checked="1">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+        <path d="M-2.03,7.39 C200.56,60.53 326.41,-25.10 500.22,13.28 L500.00,0.00 L-0.90,-8.37 Z"></path>
+      </svg>
+    </div>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-drawer-content>
+</mat-drawer-container>

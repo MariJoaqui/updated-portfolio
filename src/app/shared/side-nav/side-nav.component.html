@@ -1,0 +1,9 @@
+<!-- SideNav -->
+<div class="drawer-bg pink-4 display-flex">
+  <button mat-icon-button class="white-txt-1 left-auto" (click)="close()">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+<div class="display-flex flex-column">
+  <a class="gray-txt-1 text-2 cursor-pointer padding-sm" *ngFor="let item of links">{{ item.name }}</a>
+</div>

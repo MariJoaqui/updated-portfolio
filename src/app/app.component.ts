@@ -1,8 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
-import { MatDrawer } from '@angular/material/sidenav';
-
-// Interfaces
-import { Links } from './shared/interfaces';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,17 +6,4 @@ import { Links } from './shared/interfaces';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  @ViewChild('drawer') drawer!: MatDrawer;
-
-  links: Links[] = [
-    { name: "Sobre mí", link: "" },
-    { name: "Habilidades", link: "" },
-    { name: "Experiencia", link: "" },
-    { name: "Contacto", link: "" }  
-  ];
-
-  // Cerrar menú lateral
-  close() { this.drawer.close(); }
-
 }

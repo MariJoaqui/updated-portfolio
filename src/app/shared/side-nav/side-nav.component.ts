@@ -5,11 +5,11 @@ import { MatDrawer } from '@angular/material/sidenav';
 import { Links } from '../interfaces/interfaces';
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  selector: 'app-side-nav',
+  templateUrl: './side-nav.component.html',
+  styleUrls: ['./side-nav.component.css']
 })
-export class HeaderComponent {
+export class SideNavComponent {
 
   @ViewChild('drawer') drawer!: MatDrawer;
 
@@ -19,5 +19,8 @@ export class HeaderComponent {
     { name: "Experiencia", link: "" },
     { name: "Contacto", link: "" }  
   ];
+
+  // Cerrar menú lateral
+  close() { this.drawer.close(); }
 
 }
