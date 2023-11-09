@@ -1,10 +1,7 @@
-<!-- Navbar -->
-<div class="header display-flex">
-  <div>
-    <img src="../../../assets/img/profile.jpeg">
-    <span class="title black-txt-1">Ing. Maria Moreno</span>
-  </div>
-  <div class="display-flex">
+<div class="header display-flex w-100">
+  <img src="../../../assets/img/profile.jpeg">
+  <span class="title black-txt-1">Ing. Maria Moreno</span>
+  <div class="display-flex left-auto">
     <a class="gray-txt-1 text-2 cursor-pointer" *ngFor="let item of links">{{ item.name }}</a>
     <button mat-icon-button class="display-none" (click)="drawer.toggle()">
       <mat-icon>more_vert</mat-icon>

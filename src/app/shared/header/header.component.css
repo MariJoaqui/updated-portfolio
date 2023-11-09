@@ -1,15 +1,16 @@
-img {
+.header img {
   border: 2px solid #F9E4EF;
   border-radius: 50%;
   height: 3rem;
   margin: 0.8rem 1rem 0 0;
   width: 3rem;
 }
-a {
+.header .title { padding-top: 1.3rem; }
+.header a {
   font-family: 'Poppins', sans-serif;
-  margin-left: 1.7rem;
+  padding: 1rem 0 0 1.7rem;
 }
-a:hover { color: #B07184; }
+.header a:hover { color: #B07184; }
 
 /* Other screen sizes */
 @media screen and (max-width: 1100px) {
