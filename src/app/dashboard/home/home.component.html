@@ -39,49 +39,49 @@
 </div>
 <!-- /About me -->
 
-  <!-- Skills and interests -->
-  <div class="skills-and-interests">
-    <div class="display-flex buttons">
-      <button mat-raised-button 
-              class="skills-buttons" 
-              *ngFor="let item of buttons" 
-              (click)="showInfo( item.link )">
-        {{ item.name }}
-      </button>
-      <div class="divider-xl white-1 left-auto"></div>
+<!-- Skills and interests -->
+<div class="skills-and-interests">
+  <div class="display-flex buttons">
+    <button mat-raised-button 
+            class="skills-buttons" 
+            *ngFor="let item of buttons" 
+            (click)="showInfo( item.link )">
+      {{ item.name }}
+    </button>
+    <div class="divider-xl white-1 left-auto"></div>
+  </div>
+  <div class="display-flex description">
+    <div class="image">
+      <img [src]="image" />
     </div>
-    <div class="display-flex description">
-      <div class="image">
-        <img [src]="image" />
-      </div>
-      <div class="left-auto">
-        <h2 class="white-txt-1">{{ information }}</h2>
-        <p class="line-heigth-1 white-txt-1" *ngIf="description === 1">
-          1 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
-          perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
-          consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
-          nemo non vitae architecto. Voluptate, dolorum sequi!
-        </p>
-        <p class="line-heigth-1 white-txt-1" *ngIf="description === 2">
-          2 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
-          perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
-          consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
-          nemo non vitae architecto. Voluptate, dolorum sequi!
-        </p>
-        <p class="line-heigth-1 white-txt-1" *ngIf="description === 3">
-          3 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
-          perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
-          consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
-          nemo non vitae architecto. Voluptate, dolorum sequi!
-        </p>
-        <p class="f-size-1 white-txt-1">{{ shortDescription }}</p>
-      </div>
+    <div class="left-auto">
+      <h2 class="white-txt-1">{{ information }}</h2>
+      <p class="line-heigth-1 white-txt-1" *ngIf="description === 1">
+        1 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
+        perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
+        consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
+        nemo non vitae architecto. Voluptate, dolorum sequi!
+      </p>
+      <p class="line-heigth-1 white-txt-1" *ngIf="description === 2">
+        2 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
+        perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
+        consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
+        nemo non vitae architecto. Voluptate, dolorum sequi!
+      </p>
+      <p class="line-heigth-1 white-txt-1" *ngIf="description === 3">
+        3 una pquenea descripcion Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed blanditiis quas
+        perferendis iste saepe, quibusdam, hic ipsum amet laudantium dicta provident voluptas est quasi quod
+        consectetur itaque sint aperiam mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Labore consequuntur nam iste ex adipisci porro. Quam ex laboriosam optio assumenda blanditiis odio rem, 
+        nemo non vitae architecto. Voluptate, dolorum sequi!
+      </p>
+      <p class="f-size-1 white-txt-1">{{ shortDescription }}</p>
     </div>
   </div>
-  <!-- /Skills and interests -->
+</div>
+<!-- /Skills and interests -->
 
   <!-- Experience -->
   <div class="experience white-1 display-flex">
