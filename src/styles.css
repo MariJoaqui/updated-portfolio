@@ -1,5 +1,5 @@
 /* All */
-* { box-sizing: border-box; font-family: 'Bricolage Grotesque', sans-serif; margin: 0; padding: 0; }
+* { box-sizing: border-box; font-family: 'Poppins', sans-serif; margin: 0; padding: 0; }
 
 html, body { height: 100%; }
 body::-webkit-scrollbar { width: 0.5rem; }
@@ -59,6 +59,8 @@ h5 { font-size: 2rem; }
 h6 { font-size: 1.6rem; }
 p { font-size: 1.3rem; }
 
+.f-family { font-family: 'Bricolage Grotesque', sans-serif; }
+
 .fw-500 { font-weight: 500; }
 .fw-600 { font-weight: 600; }
 
@@ -81,4 +83,5 @@ p { font-size: 1.3rem; }
 .padding-xl { padding: 3rem 5rem; }
 
 /* Width */
+.w-18 { width: 18rem; }
 .w-100 { width: 100%; }

@@ -1,21 +1,16 @@
-/* Body */
-.body { position: relative; }
-
-.w-18 { width: 18rem; }
-
 /* Home */
 .home {
   background: 
     url('../../../assets/img/img-2.png') center/cover no-repeat,
     linear-gradient(90deg, #E6CCD4 62%, #000000 100%);
+  padding: 12% 5rem;
 }
-.home .presentation { padding: 8rem 0; }
-.home .presentation button {
+.home button {
   background: #DD6783;
   color: #FFFFFF;
   margin-top: 2rem;
 }
-::ng-deep .mdc-button__label { font-family: sans-serif !important; }
+::ng-deep .mdc-button__label { font-family: 'Poppins', sans-serif !important;  }
 
 /* About me */
 .about-me {
