@@ -1,6 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
-import { MatDrawer } from '@angular/material/sidenav';
-
+import { Component } from '@angular/core';
+import { DrawerService } from '../../services/drawer.service';
 // Interfaces
 import { Links } from '../interfaces/interfaces';
 
@@ -10,8 +9,7 @@ import { Links } from '../interfaces/interfaces';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
-  @ViewChild('drawer') drawer!: MatDrawer;
+  constructor( private drawerService: DrawerService ) {}
 
   links: Links[] = [
     { name: "Sobre mí", link: "" },
@@ -20,4 +18,7 @@ export class HeaderComponent {
     { name: "Contacto", link: "" }  
   ];
 
+  toggleDrawer() {
+    this.drawerService.toggleDrawer();
+  }
 }
