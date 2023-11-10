@@ -5,12 +5,14 @@
     linear-gradient(90deg, #E6CCD4 62%, #000000 100%);
   padding: 12% 5rem;
 }
-.home button {
-  background: #DD6783;
+.home a {
+  background: #000000;
+  border-radius: 3rem;
   color: #FFFFFF;
+  font-size: 1.2rem;
   margin-top: 2rem;
+  padding: 1.7rem;
 }
-::ng-deep .mdc-button__label { font-family: 'Poppins', sans-serif !important;  }
 
 /* About me */
 .about-me {
@@ -133,20 +135,16 @@
 @media screen and (max-width: 730px) {
 
   /* Home */
-  .padding-xl { padding: 3rem 1.5rem; }
-  .home {
-    background: 
-      url('../../../assets/img/img-2.png') center/cover no-repeat,
-      linear-gradient(90deg, #E6CCD4 62%, #000000 100%);
-  }
-  .home .presentation { padding: 0; }
-  .home h1 { font-size: 2.4rem; }
-  .home h2 { font-size: 1.9rem; }
+  .home { padding: 3rem 1.5rem; }
+  .home h1 { font-size: 2.8rem; }
+  .home h2 { font-size: 2.3rem; }
   .home h6 { 
     font-size: 1rem; 
     margin-top: 0.4rem;
   }
-  .presentation button { margin-top: 1.5rem; }
+  .home a { 
+    font-size: 0.9rem;
+    padding: 1.3rem 1.5rem; }
 
   /* About me */
   .about-me { padding: 0 1.5rem; }
