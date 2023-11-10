@@ -1,6 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 
+// Services
+import { DrawerService } from '../../services/drawer.service';
+
 // Interfaces
 import { Links } from '../interfaces/interfaces';
 
@@ -10,6 +13,7 @@ import { Links } from '../interfaces/interfaces';
   styleUrls: ['./side-nav.component.css']
 })
 export class SideNavComponent {
+  constructor( private drawerService: DrawerService ) {}
 
   @ViewChild('drawer') drawer!: MatDrawer;
 
@@ -20,7 +24,7 @@ export class SideNavComponent {
     { name: "Contacto", link: "" }  
   ];
 
-  // Cerrar menú lateral
-  close() { this.drawer.close(); }
-
+  toggleDrawer() {
+    this.drawerService.toggleDrawer();
+  }
 }
