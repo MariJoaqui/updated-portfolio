@@ -59,7 +59,7 @@
 }
 .skills .buttons {
   background: #B07184 !important;
-  border-radius: 2rem;
+  border-radius: 3rem;
   color: #FFFFFF !important;
   font-size: 1rem;
   margin-right: 2.5rem;
@@ -71,21 +71,39 @@
   color: #B07184 !important;
   transition: 0.5s;
 }
-.skills .divider-xl { margin-top: 1.1rem; }
-.skills .description { padding-top: 3rem; }
-.skills .image { margin: 2.5rem 7rem 0 0.5rem; }
+.skills .divider-xl { 
+  margin-top: 1.1rem;
+}
+.skills .description { 
+  padding-top: 3rem; 
+}
+.skills .image { 
+  margin: 2.5rem 7rem 0 0.5rem;
+}
 .skills .image img {
   height: 27rem;
   width: 30rem;
 }
-.skills .description .left-auto { margin-top: 2.4rem; }
+.skills .description .left-auto {
+  margin-top: 2.3rem; 
+}
 .skills .description h2 {
   margin-bottom: 1rem;
   text-shadow: #DD6783 0.1em 0.1em 0.2em;
 }
-.skills .text-1 { margin-bottom: 1rem; }
+.skills .f-size-1 { 
+  margin-top: 1rem; 
+}
 
 /* Experience */
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
 
 /* Other screen sizes */
 @media screen and (max-width: 1300px) {
@@ -101,25 +119,23 @@
 }
 @media screen and (max-width: 1200px) {
 
+  /* All */
+  p { text-align: justify; }
+
   /* About me */
   .about-me { flex-direction: column; height: auto !important; }
   .about-me .description { padding: 4rem 0 3rem 0; }
-  .about-me .line-heigth-1, .about-me .f-size-1 { margin-right: 0; text-align: justify; }
+  .about-me .line-heigth-1, .about-me .f-size-1 { margin-right: 0; }
   .about-me .left-auto { height: 37rem; margin: 0 auto; }
   .about-me .card-1 { border-radius: 1.5rem; margin-left: 10rem; }
   .about-me .card-2 { margin-right: 10rem; bottom: 13rem; }
 
   /* Skills and interests */
   .skills { padding: 5rem; }
-  .skills .buttons { justify-content: center; }
-  .skills .buttons { margin: 0 1rem; }
+  .skills .buttons { margin: 0 auto !important; }
   .skills .divider-xl { display: none; }
   .skills .description { flex-direction: column; }
-  .skills .description .image { 
-    display: flex;
-    justify-content: center;
-    margin: 0.5rem 0; 
-  }
+  .skills .description .image { display: flex; justify-content: center; margin: 0.5rem 0; }
   .skills .description .image img { margin: 0 auto; }
 
 }
@@ -137,7 +153,6 @@
   .about-me .description { padding: 3.8rem 0 3rem 0; }
   .about-me h3 { font-size: 2.4rem; }
   .about-me .divider-md { height: 0.1rem; margin: 0.7rem 0 1.8rem 0; width: 5rem; }
-  .about-me .f-size-1 { font-size: 1.1rem; }
   .about-me .left-auto { height: 26rem; }
   .about-me .card-1, .card-2, .about-me .card-2 img { height: 15rem; }
   .about-me .card-1 { margin-left: 3rem; }
@@ -146,27 +161,7 @@
 
   /* Skills and interests */
   .skills { padding: 3rem 1.5rem; }
-  .skills .buttons {
-    font-size: 0.8rem;
-    height: 2rem;
-    margin: 0 0.4rem;
-    padding: 0 1.2rem;
-  }
-  .skills .image img {
-    height: 17rem;
-    width: 20rem;
-  }
-  .skills .description h2 { 
-    font-size: 2.3rem; 
-    margin-top: 1rem;
-  }
-  .skills .text-1 { 
-    font-size: 1rem; 
-    line-height: 1.5rem; 
-    text-align: justify;
-  }
-  .skills .text-2 { 
-    font-size: 0.9rem; 
-    text-align: justify;
-  }
+  .skills .buttons { font-size: 0.8rem; height: 2rem; margin: 0 0.4rem; padding: 0 1.2rem; }
+  .skills .image img { height: 17rem; width: 20rem; }
+  .skills .description h2 { font-size: 2.3rem; margin-top: 1rem; }
 }
