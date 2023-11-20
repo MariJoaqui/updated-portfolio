@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
       this.shortDescription = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat minima, corrupti voluptas sit similique auterror quae ea suscipit laborum atque quo vero perspiciatis ut voluptates perferendis minus odit nihil.';
     }
     else if ( info === 3 ) {
-      this.image = '../../../assets/img/aryan-dhiman-iGLLtLINSkw-unsplash.jpg';
+      this.image = '../../../assets/img/skills.png';
       this.information = 'Otros';
       this.description = 3;
       this.shortDescription = 'una frase aqui, la primera ddddddddds sssssssssssssssr kjibbufd gfbgfhbhbhnnh u hb t thgythbthb yhju juy j iu k ku km sdshfuieraf ehreurhfgfbv ytutjuujy hy yt ht nhhhhhhhhhhhhhhghghytyjjynuimhhhhhhhhhhhhhhhhhhhhh.';
