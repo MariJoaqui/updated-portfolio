@@ -1,5 +1,5 @@
 <!-- Home -->
-<div class="home black-txt-1">
+<div class="home black-txt-1" id="home">
   <h1 class="f-family">Maria Joaquina</h1>
   <h2 class="f-family">Moreno Aulacio</h2>
   <h6 class="gray-txt-2 f-family">Ingeniera en Informática</h6>
@@ -13,7 +13,7 @@
 <!-- /Home -->
 
 <!-- About me -->
-<div class="about-me white-txt-1 display-flex">
+<div class="about-me white-txt-1 display-flex" id="about-me">
   <div class="description">
     <h3 class="f-family">Sobre mí</h3>
     <div class="divider-md white-1"></div>
@@ -41,7 +41,7 @@
 <!-- /About me -->
 
 <!-- Skills and interests -->
-<div class="skills">
+<div class="skills" id="skills">
   <div class="display-flex">
     <button mat-raised-button 
             class="buttons" 
@@ -56,7 +56,7 @@
       <img [src]="image" />
     </div>
     <div class="left-auto">
-      <h2 class="white-txt-1">{{ information }}</h2>
+      <h2 class="white-txt-1 f-family">{{ information }}</h2>
       <p class="line-heigth-1 white-txt-1" *ngIf="description === 1">
         Me especializo en el desarrollo front-end, centrándome en la creación de interfaces de usuario 
         dinámicas mediante HTML, CSS y JavaScript, con apoyo en frameworks como Angular, Bootstrap y 
@@ -88,9 +88,9 @@
 <!-- /Skills and interests -->
 
 <!-- Experience -->
-<div class="experience pink-3 padding-xl w-100">
-  <h3 class="f-family">Experiencia</h3>
-  <div class="divider-md white-1"></div>
+<div class="experience pink-3 padding-xl w-100" id="experience">
+  <h3 class="f-family white-txt-1 text-center">Experiencia</h3>
+  <div class="divider-sm white-1"></div>
   <div class="information display-flex">
     <mat-card class="example-card">
       <mat-card-header>
@@ -107,7 +107,6 @@
         </p>
       </mat-card-content>
     </mat-card>
-
   </div>
 </div>
 <!-- /Experience -->

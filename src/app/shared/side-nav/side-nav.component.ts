@@ -18,10 +18,10 @@ export class SideNavComponent {
   @ViewChild('drawer') drawer!: MatDrawer;
 
   links: Links[] = [
-    { name: "Sobre mí", link: "" },
-    { name: "Habilidades", link: "" },
-    { name: "Experiencia", link: "" },
-    { name: "Contacto", link: "" }  
+    { name: "Sobre mí", link: "", scroll: "" },
+    { name: "Habilidades", link: "", scroll: "" },
+    { name: "Experiencia", link: "", scroll: "" },
+    { name: "Contacto", link: "", scroll: "" }  
   ];
 
   toggleDrawer() {

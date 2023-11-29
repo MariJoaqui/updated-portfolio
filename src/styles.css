@@ -69,6 +69,8 @@ p { font-size: 1.3rem; }
 .line-height-normal { line-height: normal; }
 .line-heigth-1 { line-height: 2rem; }
 
+.text-center { text-align: center; }
+
 /* Margin - Padding */
 .left-auto { margin-left: auto; }
 

@@ -2,7 +2,11 @@
   <img src="../../../assets/img/profile.jpeg">
   <span class="title black-txt-1">Ing. Maria Moreno</span>
   <div class="display-flex left-auto">
-    <a class="gray-txt-1 text-2 cursor-pointer" *ngFor="let item of links">{{ item.name }}</a>
+    <a class="gray-txt-1 text-2 cursor-pointer" 
+       *ngFor="let item of links"
+       (click)="scrollToSection( item.scroll! )">
+      {{ item.name }}
+    </a>
     <button mat-icon-button class="display-none" (click)="toggleDrawer()">
       <mat-icon>more_vert</mat-icon>
     </button>

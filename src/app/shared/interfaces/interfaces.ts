@@ -1,4 +1,5 @@
 export interface Links {
-  name: string,
-  link: string | number,
+  name   : string,
+  link   : string | number,
+  scroll : string,
 }

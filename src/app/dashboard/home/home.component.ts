@@ -16,9 +16,9 @@ export class HomeComponent implements OnInit {
   shortDescription!: string;
 
   buttons: Links[] = [
-    { name: 'Habilidades', link: 1 },
-    { name: 'Intereses', link: 2 },
-    { name: 'Otros', link: 3 }
+    { name: 'Habilidades', link: 1, scroll: "" },
+    { name: 'Intereses', link: 2, scroll: "" },
+    { name: 'Otros', link: 3, scroll: "" }
   ];
 
   ngOnInit() { 
