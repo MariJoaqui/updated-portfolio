@@ -55,7 +55,7 @@
 /* Skills and interests */
 .skills {
   background: linear-gradient(0deg, #B07184 0%, #432F4A 49%, #000000 100%);
-  padding: 8rem 5rem 6rem 5rem;
+  padding: 8rem 5rem 0 5rem;
 }
 .skills .buttons {
   background: #B07184 !important;
@@ -94,8 +94,16 @@
 .skills .f-size-1 { 
   margin-top: 1rem; 
 }
+.skills .divider-2 {
+  height: 0.13rem;
+  margin-top: 5rem;
+}
 
 /* Experience */
+.experience {
+  background: linear-gradient(0deg, rgba(230,204,212,1) 0%, rgba(225,195,204,1) 33%, rgba(218,184,194,1) 57%, rgba(208,167,180,1) 76%, rgba(176,113,132,1) 100%);
+}
+
 .example-card {
   max-width: 400px;
 }
@@ -164,4 +172,6 @@
   .skills .buttons { font-size: 0.8rem; height: 2rem; margin: 0 0.4rem; padding: 0 1.2rem; }
   .skills .image img { height: 17rem; width: 20rem; }
   .skills .description h2 { font-size: 2.3rem; margin-top: 1rem; }
+  .skills .divider-2 { margin: 3rem auto 0 auto; }
+
 }
