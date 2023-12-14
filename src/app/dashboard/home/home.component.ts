@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 // Interfaces
-import { Links } from 'src/app/shared/interfaces/interfaces';
+import { Cards, Links } from 'src/app/shared/interfaces/interfaces';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +10,11 @@ import { Links } from 'src/app/shared/interfaces/interfaces';
 })
 export class HomeComponent implements OnInit {
 
+  // Para el Slider
   @ViewChild('slider', { static: true }) slider!: ElementRef;
   currentIndex = 0; 
 
+  // Variables y arreglos
   image!           : string;
   information!     : string;
   description!     : number;
@@ -24,12 +26,19 @@ export class HomeComponent implements OnInit {
     { name: 'Otros', link: 3, scroll: "" }
   ];
 
-  constructor( private el: ElementRef ) { }
-
+  cards: Cards[] = [
+    { title: "Primero", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
+    { title: "Segundo", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
+    { title: "Tercero", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
+    { title: "Cuarto", description: "descripcion aqui", image: "", time: "aqui va el tiempo" }
+  ];
+  
+  // OnInit
   ngOnInit() { 
     this.showInfo(1); 
   }
 
+  // Procedimientos
   showInfo( info: number | string ) {
     if ( info === 1 ) {
       this.image = '../../../assets/img/skills.png';
@@ -63,4 +72,5 @@ export class HomeComponent implements OnInit {
     this.slider.nativeElement.insertBefore(lastItem, items[0]);
     this.currentIndex = (this.currentIndex - 1 + items.length) % items.length;
   }
+
 }

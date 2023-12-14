@@ -110,55 +110,40 @@
   height: 0.15rem !important;
   margin: 1.2rem auto 4rem auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-.experience .information {
-  padding: 1.25rem 0;
-}
 .experience .slider-wrap {
-  position: relative;
+  height: 350px;
   overflow: hidden;
-  height: 150px;
 }
 .experience .slider-main {
-  position: absolute;
   width: 200%;
 }
 .experience .item {
-  display: inline-block;
-  width: 318px;
-  height: 150px;
-  background: #b10808;
-  position: relative;
-  margin: 0 12px;
+  border-radius: 0.8rem;
+  height: 350px;
+  margin: 0 0.75rem;
+  width: 320px;
 }
 .experience .text {
-  position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #FFFFFF;
-  font-size: 24px;
-  font-weight: bolder;
+}
+.experience .text img {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+}
+.experience .slider-button {
+  background: transparent;
+  border: none;
 }
 .experience .prev {
-  position: absolute;
-  left: 28px;
+  left: 24px;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 .experience .next {
-  position: absolute;
-  right: -5px;
+  right: -12px;
   top: 50%;
   transform: translate(-50%, -50%);
 }
