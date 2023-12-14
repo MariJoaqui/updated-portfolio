@@ -115,13 +115,63 @@
 
 
 
-.example-card {
-  max-width: 400px;
+
+
+
+
+
+
+.experience .information {
+  padding: 1.25rem 0;
 }
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
+.experience .slider-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 150px;
 }
+.experience .slider-main {
+  position: absolute;
+  width: 200%;
+}
+.experience .item {
+  display: inline-block;
+  width: 318px;
+  height: 150px;
+  background: #b10808;
+  position: relative;
+  margin: 0 12px;
+}
+.experience .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.experience .prev {
+  position: absolute;
+  left: 28px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.experience .next {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Other screen sizes */
 @media screen and (max-width: 1300px) {

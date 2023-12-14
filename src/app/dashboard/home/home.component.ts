@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 // Interfaces
 import { Links } from 'src/app/shared/interfaces/interfaces';
@@ -10,6 +10,9 @@ import { Links } from 'src/app/shared/interfaces/interfaces';
 })
 export class HomeComponent implements OnInit {
 
+  @ViewChild('slider', { static: true }) slider!: ElementRef;
+  currentIndex = 0; 
+
   image!           : string;
   information!     : string;
   description!     : number;
@@ -20,6 +23,8 @@ export class HomeComponent implements OnInit {
     { name: 'Intereses', link: 2, scroll: "" },
     { name: 'Otros', link: 3, scroll: "" }
   ];
+
+  constructor( private el: ElementRef ) { }
 
   ngOnInit() { 
     this.showInfo(1); 
@@ -46,4 +51,16 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  next() {
+    const items = this.slider.nativeElement.getElementsByClassName('item');
+    this.slider.nativeElement.appendChild(items[0]);
+    this.currentIndex = (this.currentIndex + 1) % items.length;
+  }
+
+  prev() {
+    const items = this.slider.nativeElement.getElementsByClassName('item');
+    const lastItem = items[items.length - 1];
+    this.slider.nativeElement.insertBefore(lastItem, items[0]);
+    this.currentIndex = (this.currentIndex - 1 + items.length) % items.length;
+  }
 }

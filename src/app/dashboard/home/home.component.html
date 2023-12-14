@@ -91,22 +91,32 @@
 <div class="experience pink-3 padding-xl w-100" id="experience">
   <h3 class="f-family white-txt-1 text-center">Experiencia</h3>
   <div class="divider-sm white-1"></div>
-  <div class="information display-flex">
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
-        </p>
-      </mat-card-content>
-    </mat-card>
+  <div class="information"> <!-- Simula el section -->
+    <div class="container-fluid">
+      <div class="slider-wrap">
+        <div class="slider-main" #slider>
+          <div class="item">
+            <div class="text">1</div>
+          </div>
+          <div class="item">
+            <div class="text">2</div>
+          </div>
+          <div class="item">
+            <div class="text">3</div>
+          </div>
+          <div class="item">
+            <div class="text">4</div>
+          </div>
+          <div class="item">
+            <div class="text">5</div>
+          </div>
+        </div>
+        <div class="button-area">
+          <button type="button" class="prev" (click)="prev()">Prev</button>
+          <button type="button" class="next" (click)="next()">Next</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <!-- /Experience -->
