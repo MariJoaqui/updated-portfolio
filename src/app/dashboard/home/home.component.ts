@@ -1,4 +1,5 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import KeenSlider, { KeenSliderInstance } from "keen-slider"
 
 // Interfaces
 import { Cards, Links } from 'src/app/shared/interfaces/interfaces';
@@ -6,19 +7,20 @@ import { Cards, Links } from 'src/app/shared/interfaces/interfaces';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: [
+    '../../../../node_modules/keen-slider/keen-slider.min.css',
+    './home.component.css'
+  ]
 })
-export class HomeComponent implements OnInit {
-
-  // Para el Slider
-  @ViewChild('slider', { static: true }) slider!: ElementRef;
-  currentIndex = 0; 
+export class HomeComponent implements OnInit, AfterViewInit {
+  @ViewChild("sliderRef") sliderRef!: ElementRef<HTMLElement>
 
   // Variables y arreglos
-  image!           : string;
-  information!     : string;
-  description!     : number;
+  image!: string;
+  information!: string;
+  description!: number;
   shortDescription!: string;
+  slider!: KeenSliderInstance | null;
 
   buttons: Links[] = [
     { name: 'Habilidades', link: 1, scroll: "" },
@@ -32,27 +34,27 @@ export class HomeComponent implements OnInit {
     { title: "Tercero", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
     { title: "Cuarto", description: "descripcion aqui", image: "", time: "aqui va el tiempo" }
   ];
-  
+
   // OnInit
-  ngOnInit() { 
-    this.showInfo(1); 
+  ngOnInit() {
+    this.showInfo(1);
   }
 
   // Procedimientos
-  showInfo( info: number | string ) {
-    if ( info === 1 ) {
+  showInfo(info: number | string) {
+    if (info === 1) {
       this.image = '../../../assets/img/skills.png';
       this.information = 'Habilidades';
       this.description = 1;
       this.shortDescription = 'Me gusta plasmar mis ideas visualmente antes de llevarlas al código. Disfruto creando diseños previos en programas especializados, asegurando un enfoque estético y funcional en cada proyecto.';
     }
-    else if ( info === 2 ) {
+    else if (info === 2) {
       this.image = '../../../assets/img/interests.png';
       this.information = 'Intereses';
       this.description = 2;
       this.shortDescription = '';
     }
-    else if ( info === 3 ) {
+    else if (info === 3) {
       this.image = '../../../assets/img/others.png';
       this.information = 'Otros';
       this.description = 3;
@@ -60,17 +62,17 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  next() {
-    const items = this.slider.nativeElement.getElementsByClassName('item');
-    this.slider.nativeElement.appendChild(items[0]);
-    this.currentIndex = (this.currentIndex + 1) % items.length;
+  ngAfterViewInit() {
+    this.slider = new KeenSlider(this.sliderRef.nativeElement, {
+      breakpoints: {
+        "(min-width: 400px)": {
+          slides: { perView: 2, spacing: 5 },
+        },
+        "(min-width: 1000px)": {
+          slides: { perView: 3, spacing: 10 },
+        },
+      },
+      slides: { perView: 1 },
+    })
   }
-
-  prev() {
-    const items = this.slider.nativeElement.getElementsByClassName('item');
-    const lastItem = items[items.length - 1];
-    this.slider.nativeElement.insertBefore(lastItem, items[0]);
-    this.currentIndex = (this.currentIndex - 1 + items.length) % items.length;
-  }
-
 }
