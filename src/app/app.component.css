@@ -1,20 +1,17 @@
-/* SideNav */
-.drawer { width: 14rem; }
-
-/* Navbar */
-mat-toolbar { padding: 0 3.5rem; }
-
-/* Wave */
+.drawer {
+  width: 15rem;
+}
+mat-toolbar {
+  padding: 0 3.5rem;
+}
 .wave-style {
   height: 150px; 
   overflow: hidden; 
   position: absolute; 
-  width: 100%;
   z-index: 10000; 
 }
 .wave-style svg {
-  height: 100%; 
-  width: 100%;
+  height: 100%;
 }
 .wave-style path {
   fill: #FFFFFF;
@@ -24,10 +21,11 @@ mat-toolbar { padding: 0 3.5rem; }
 /* Other screen sizes */
 @media screen and (max-width: 600px) {
 
-  /* Navbar */
-  mat-toolbar { padding: 0 1.5rem; }
-  
-  /* Wave */
-  .wave-style { display: none; }
+  mat-toolbar {
+    padding: 0 1.5rem;
+  }
+  .wave-style {
+    display: none;
+  }
 
 }
