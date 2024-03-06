@@ -32,7 +32,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
     { title: "Primero", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
     { title: "Segundo", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
     { title: "Tercero", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
-    { title: "Cuarto", description: "descripcion aqui", image: "", time: "aqui va el tiempo" }
+    { title: "Cuarto", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
+    { title: "Quinto", description: "descripcion aqui", image: "", time: "aqui va el tiempo" },
+    { title: "Sexto", description: "descripcion aqui", image: "", time: "aqui va el tiempo" }
   ];
 
   // OnInit
