@@ -13,15 +13,15 @@ import { Links } from '../interfaces/interfaces';
   styleUrls: ['./side-nav.component.css']
 })
 export class SideNavComponent {
-  constructor( private drawerService: DrawerService ) {}
+  constructor(private drawerService: DrawerService) { }
 
   @ViewChild('drawer') drawer!: MatDrawer;
 
   links: Links[] = [
-    { name: "Sobre mí", link: "", scroll: "" },
+    { name: "Sobre mí", link: "", scroll: "about-me" },
     { name: "Habilidades", link: "", scroll: "" },
     { name: "Experiencia", link: "", scroll: "" },
-    { name: "Contacto", link: "", scroll: "" }  
+    { name: "Contacto", link: "", scroll: "" }
   ];
 
   toggleDrawer() {

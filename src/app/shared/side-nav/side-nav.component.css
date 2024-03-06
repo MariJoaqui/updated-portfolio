@@ -1,8 +1,15 @@
-.drawer-bg { 
+.drawer { 
   background: url("../../../assets/img/background-2.jpg");
   background-size: cover;
   height: 9rem;
   padding: 0.5rem; 
 }
-.display-flex { padding-top: 0.5rem; }
-a { padding: 0.5rem 1.5rem; }
+.menu { 
+  padding-top: 0.8rem;
+}
+.menu a { 
+  padding: 0.5rem 1.5rem; 
+}
+.menu a:hover {
+  color: #B07184;
+}
