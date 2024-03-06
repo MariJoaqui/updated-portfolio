@@ -1,14 +1,12 @@
-/* Home */
-.home {
+/* Presentation */
+.presentation {
   background: 
     url('../../../assets/img/img-2.png') center/cover no-repeat,
     linear-gradient(90deg, #E6CCD4 62%, #000000 100%);
   padding: 10% 5rem;
 }
-.home a {
-  background: #000000;
+.presentation a {
   border-radius: 3rem;
-  color: #FFFFFF;
   font-size: 1.2rem;
   margin-top: 2rem;
   padding: 1.7rem;
@@ -105,10 +103,6 @@
 }
 .experience h3 {
   text-shadow: #2e2e2e 0.1em 0.1em 0.2em;
-}
-.experience .divider-sm {
-  height: 0.15rem !important;
-  margin: 1.2rem auto 4rem auto;
 }
 
 
@@ -228,12 +222,12 @@
 }
 @media screen and (max-width: 730px) {
 
-  /* Home */
-  .home { padding: 3rem 1.5rem; }
-  .home h1 { font-size: 2.8rem; }
-  .home h2 { font-size: 2.3rem; }
-  .home h6 { font-size: 1rem; margin-top: 0.4rem; }
-  .home a { font-size: 0.9rem; padding: 1.3rem 1.5rem; }
+  /* Presentation */
+  .presentation { padding: 3rem 1.5rem; }
+  .presentation h1 { font-size: 2.8rem; }
+  .presentation h2 { font-size: 2.3rem; }
+  .presentation h6 { font-size: 1rem; margin-top: 0.4rem; }
+  .presentation a { font-size: 0.9rem; padding: 1.3rem 1.5rem; }
 
   /* About me */
   .about-me { padding: 0 1.5rem; }

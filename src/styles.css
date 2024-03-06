@@ -7,7 +7,7 @@ body::-webkit-scrollbar-track { background: #000000; }
 body::-webkit-scrollbar-thumb { background: #B07184; }
 
 /* Colors (Background) */
-.black-1 { background: #000000; }
+.black-1 { background: #000000 !important; }
 
 .gray-2 { background: #525252; }
 .gray-1 { background: #939393; }

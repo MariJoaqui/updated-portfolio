@@ -75,5 +75,4 @@ export class HomeComponent implements OnInit, AfterViewInit {
       slides: { perView: 1 },
     })
   }
-
 }
