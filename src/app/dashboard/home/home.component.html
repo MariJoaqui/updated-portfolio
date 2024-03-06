@@ -1,9 +1,9 @@
 <!-- Presentation -->
-<div class="presentation black-txt-1" id="presentation">
+<div class="presentation black-text" id="presentation">
   <h1>Maria Joaquina</h1>
   <h2>Moreno Aulacio</h2>
-  <h6 class="gray-txt-2">Ingeniera en Informática</h6>
-  <a class="white-txt-1 black-1 display-flex"
+  <h6 class="gray-text-2">Ingeniera en Informática</h6>
+  <a class="white-text black display-flex"
      mat-raised-button
      href="https://www.instagram.com/riselet.ve/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
      target="_blank">
@@ -14,10 +14,10 @@
 <!-- /Presentation -->
 
 <!-- About me -->
-<div class="about-me white-txt-1 display-flex" id="about-me">
+<div class="about-me white-text display-flex" id="about-me">
   <div class="description">
     <h3>Sobre mí</h3>
-    <div class="divider-md white-1"></div>
+    <div class="divider-md white"></div>
     <p class="line-heigth-1">
       ¡Hola! Mi nombre es María Joaquina Moreno Aulacio y soy Ingeniera en Informática, apasionada por el diseño y el desarrollo web.
     </p>
@@ -25,7 +25,7 @@
       Me formé en la Universidad Privada Dr. Rafael Belloso Chacín (URBE), Maracaibo, Estado Zulia. A lo largo de mi trayectoria como 
       desarrolladora, siempre he priorizado la promoción de la ética de trabajo con base en la responsabilidad, la honestidad y el respeto.
     </p>
-    <p class="f-size-1 gray-txt-1">
+    <p class="f-size-1 gray-text-1">
       Para mí, cada línea de código es una oportunidad para tejer soluciones innovadoras, por lo que cada proyecto es un lienzo donde 
       fusiono la lógica con la creatividad, dando vida a soluciones únicas y visionarias.
     </p>
@@ -50,22 +50,22 @@
             (click)="showInfo( item.link )">
       {{ item.name }}
     </button>
-    <div class="divider-xl white-1 left-auto"></div>
+    <div class="divider-xl white left-auto"></div>
   </div>
   <div class="display-flex description">
     <div class="image">
       <img [src]="image" />
     </div>
     <div class="left-auto">
-      <h2 class="white-txt-1">{{ information }}</h2>
-      <p class="line-heigth-1 white-txt-1" *ngIf="description === 1">
+      <h2 class="white-text">{{ information }}</h2>
+      <p class="line-heigth-1 white-text" *ngIf="description === 1">
         Me especializo en el desarrollo front-end, centrándome en la creación de interfaces de usuario 
         dinámicas mediante HTML, CSS y JavaScript, con apoyo en frameworks como Angular, Bootstrap y 
         Materialize. Además, si bien cuento con experiencia en otros lenguajes de programación como 
         Visual Basic, C++ y Java, mi principal área de enfoque es el desarrollo en PHP en el ámbito del 
         back-end.
       </p>
-      <p class="line-heigth-1 white-txt-1" *ngIf="description === 2">
+      <p class="line-heigth-1 white-text" *ngIf="description === 2">
         Con una pasión constante por la búsqueda del conocimiento, estoy siempre en la expansión de mis 
         habilidades más allá de la informática. La creatividad me ha guiado hacia diversas disciplinas, 
         como el diseño gráfico, donde disfruto dando vida a elementos estéticos y atractivos. Además, he 
@@ -74,23 +74,23 @@
         impulsa a abordar proyectos de manera innovadora y atractiva, siempre en busca de nuevas formas 
         de expresión y desarrollo.
       </p>
-      <p class="line-heigth-1 white-txt-1" *ngIf="description === 3">
+      <p class="line-heigth-1 white-text" *ngIf="description === 3">
         Me encanta sumergirme en la música, encontrar en ella una fuente constante de inspiración y relajación. 
         Mi familia es mi pilar, disfruto dedicar tiempo de calidad con ellos. Ayudar a las personas es una 
         gratificación constante en mi vida y encuentro alegría en contribuir al bienestar de quienes me rodean. 
         Además, mi pasión por las manualidades se manifiesta en la creación de bisutería, lo que considero es un 
         escape creativo y la oportunidad de construir piezas únicas. 
       </p>
-      <p class="f-size-1 white-txt-1">{{ shortDescription }}</p>
+      <p class="f-size-1 white-text">{{ shortDescription }}</p>
     </div>
   </div>
-  <div class="divider-2 white-1 w-100"></div>
+  <div class="divider-2 white w-100"></div>
 </div>
 <!-- /Skills and interests -->
 
 <!-- Experience -->
 <div class="experience padding-xl w-100" id="experience">
-  <h3 class="white-txt-1 text-center">Experiencia</h3>
+  <h3 class="white-text text-center">Experiencia</h3>
   <div class="information">
     <div class="keen-slider" #sliderRef>
       <div *ngFor="let card of cards" class="keen-slider__slide">

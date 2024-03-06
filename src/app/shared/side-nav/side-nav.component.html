@@ -1,8 +1,8 @@
 <div class="drawer-bg pink-4 display-flex">
-  <button mat-icon-button class="white-txt-1 left-auto" (click)="toggleDrawer()">
+  <button mat-icon-button class="white-text left-auto" (click)="toggleDrawer()">
     <mat-icon>close</mat-icon>
   </button>
 </div>
 <div class="display-flex flex-column">
-  <a class="gray-txt-1 text-2 cursor-pointer padding-sm" *ngFor="let item of links">{{ item.name }}</a>
+  <a class="gray-text-1 cursor-pointer padding-sm" *ngFor="let item of links">{{ item.name }}</a>
 </div>

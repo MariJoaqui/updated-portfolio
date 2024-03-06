@@ -1,13 +1,15 @@
 <div class="header display-flex w-100">
   <img src="../../../assets/img/profile.jpeg">
-  <span class="title black-txt-1">Ing. Maria Moreno</span>
+  <span class="black-text">Ing. Maria Moreno</span>
   <div class="display-flex left-auto">
-    <a class="gray-txt-1 text-2 cursor-pointer" 
-       *ngFor="let item of links"
-       (click)="scrollToSection( item.scroll! )">
-      {{ item.name }}
+    <a class="gray-text-1 cursor-pointer" 
+       *ngFor="let link of links"
+       (click)="scrollToSection( link.scroll! )">
+      {{ link.name }}
     </a>
-    <button mat-icon-button class="display-none" (click)="toggleDrawer()">
+    <button mat-icon-button 
+            class="display-none"
+            (click)="toggleDrawer()">
       <mat-icon>more_vert</mat-icon>
     </button>
   </div>
